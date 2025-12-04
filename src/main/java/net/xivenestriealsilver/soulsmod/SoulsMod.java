@@ -1,6 +1,9 @@
 package net.xivenestriealsilver.soulsmod;
 
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.xivenestriealsilver.soulsmod.block.ModBlocks;
 import net.xivenestriealsilver.soulsmod.item.ModItems;
 import org.slf4j.Logger;
 
@@ -38,6 +41,7 @@ public class SoulsMod {
         NeoForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -57,6 +61,11 @@ public class SoulsMod {
             event.accept(ModItems.LUMINOUS_INGOT);
             event.accept(ModItems.LUMINOUS_KEY);
 
+        }
+
+
+        if(event.getTabKey() ==CreativeModeTabs.BUILDING_BLOCKS){
+            event.accept(ModBlocks.LUMINOUS_ORE);
         }
     }
 
