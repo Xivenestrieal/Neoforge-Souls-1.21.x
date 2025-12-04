@@ -1,5 +1,7 @@
 {
   "item.soulsmod.raw_luminous": "Raw Luminous",
   "item.soulsmod.luminous_ingot": "Luminous Ingot",
-  "item.soulsmod.luminous_key": "Luminous Key"
+  "item.soulsmod.luminous_key": "Luminous Key",
+
+  "block.soulsmodluminous_ore": "Block of Luminous Ore"
 }

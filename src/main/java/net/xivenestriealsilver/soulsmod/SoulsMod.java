@@ -61,8 +61,12 @@ public class SoulsMod {
             event.accept(ModItems.LUMINOUS_INGOT);
             event.accept(ModItems.LUMINOUS_KEY);
 
+
         }
 
+        if(event.getTabKey() ==CreativeModeTabs.TOOLS_AND_UTILITIES){
+            event.accept(ModItems.SEARCHING_EYES);
+        }
 
         if(event.getTabKey() ==CreativeModeTabs.BUILDING_BLOCKS){
             event.accept(ModBlocks.LUMINOUS_ORE);

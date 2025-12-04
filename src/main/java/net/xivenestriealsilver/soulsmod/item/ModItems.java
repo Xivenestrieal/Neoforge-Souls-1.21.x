@@ -19,6 +19,9 @@ public class ModItems {
     public static final DeferredItem<Item> LUMINOUS_KEY = ITEMS.register("luminous_key",
             () -> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item> SEARCHING_EYES = ITEMS.register("searching_eyes",
+            () -> new Item(new Item.Properties()));
+
 
 
     public static void register(IEventBus eventBus){
