@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "soulsmod:item/luminous"
+    "layer0": "soulsmod:item/luminous_ingot"
   }
 }

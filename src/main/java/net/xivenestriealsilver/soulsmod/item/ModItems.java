@@ -13,9 +13,11 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
 
 
-    public static final DeferredItem<Item> LUMINOUS = ITEMS.register("luminous",
+    public static final DeferredItem<Item> LUMINOUS_INGOT = ITEMS.register("luminous_ingot",
             () -> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item> LUMINOUS_KEY = ITEMS.register("luminous_key",
+            () -> new Item(new Item.Properties()));
 
 
 

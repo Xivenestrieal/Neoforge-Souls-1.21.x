@@ -54,7 +54,8 @@ public class SoulsMod {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.RAW_LUMINOUS);
-            event.accept(ModItems.LUMINOUS);
+            event.accept(ModItems.LUMINOUS_INGOT);
+            event.accept(ModItems.LUMINOUS_KEY);
 
         }
     }
