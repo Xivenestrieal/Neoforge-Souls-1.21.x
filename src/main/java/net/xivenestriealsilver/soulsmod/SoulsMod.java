@@ -69,6 +69,7 @@ public class SoulsMod {
         }
 
         if(event.getTabKey() ==CreativeModeTabs.BUILDING_BLOCKS){
+            event.accept(ModBlocks.LUMINOUS_BLOCK);
             event.accept(ModBlocks.LUMINOUS_ORE);
         }
     }

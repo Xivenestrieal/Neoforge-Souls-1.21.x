@@ -1,7 +1,5 @@
 {
   "variants": {
-    "": {
-      "model": "tutorialmod:block/luminous_ore"
-    }
+    "": { "model": "soulsmod:block/luminous_ore" }
   }
 }
