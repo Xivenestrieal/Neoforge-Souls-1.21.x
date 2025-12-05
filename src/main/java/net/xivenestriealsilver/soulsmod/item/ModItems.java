@@ -22,6 +22,10 @@ public class ModItems {
     public static final DeferredItem<Item> SEARCHING_EYES = ITEMS.register("searching_eyes",
             () -> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item> HOGYOKU_SOUL = ITEMS.register("hogyoku_soul",
+            () -> new Item(new Item.Properties()));
+
+
 
 
     public static void register(IEventBus eventBus){

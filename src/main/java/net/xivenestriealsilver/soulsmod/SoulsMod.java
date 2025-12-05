@@ -4,6 +4,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.xivenestriealsilver.soulsmod.block.ModBlocks;
+import net.xivenestriealsilver.soulsmod.item.ModCreativeModeTabs;
 import net.xivenestriealsilver.soulsmod.item.ModItems;
 import org.slf4j.Logger;
 
@@ -40,6 +41,8 @@ public class SoulsMod {
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
+        ModCreativeModeTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
@@ -62,6 +65,7 @@ public class SoulsMod {
             event.accept(ModItems.LUMINOUS_KEY);
 
 
+
         }
 
         if(event.getTabKey() ==CreativeModeTabs.TOOLS_AND_UTILITIES){
@@ -72,6 +76,12 @@ public class SoulsMod {
             event.accept(ModBlocks.LUMINOUS_BLOCK);
             event.accept(ModBlocks.LUMINOUS_ORE);
         }
+
+
+        if(event.getTabKey() ==CreativeModeTabs.COMBAT){
+            event.accept(ModItems.HOGYOKU_SOUL);
+        }
+
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

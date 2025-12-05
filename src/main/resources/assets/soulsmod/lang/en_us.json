@@ -2,7 +2,11 @@
   "item.soulsmod.raw_luminous": "Raw Luminous",
   "item.soulsmod.luminous_ingot": "Luminous Ingot",
   "item.soulsmod.luminous_key": "Luminous Key",
+  "item.soulsmod.hogyoku_soul": "Hogyoku Soul",
 
   "block.soulsmod.luminous_block": "Block of Luminous",
-  "block.soulsmod.luminous_ore": "Luminous Ore"
+  "block.soulsmod.luminous_ore": "Luminous Ore",
+
+  "creativetab.soulsmod.soul_fragments": "Soul Fragments",
+  "creativetab.soulsmod.gate_keys": "Gate Keys"
 }
