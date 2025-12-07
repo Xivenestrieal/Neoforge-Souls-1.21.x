@@ -4,15 +4,21 @@
   "key": {
     "L": {
       "item": "soulsmod:lazurite_ingot"
+    },
+    "C": {
+      "item": "soulsmod:corrupted_soul"
+    },
+    "B": {
+      "item": "minecraft:bone"
     }
   },
   "pattern": [
-    "LLL",
-    "LLL",
-    "LLL"
+    "LL ",
+    "LC ",
+    " BB"
   ],
   "result": {
-    "id": "soulsmod:lazurite_block",
+    "id": "soulsmod:lazurite_key",
     "count": 1
   }
 }
