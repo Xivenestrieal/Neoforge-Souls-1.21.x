@@ -21,11 +21,11 @@ import static net.xivenestriealsilver.soulsmod.SoulsMod.MOD_ID;
 public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(SoulsMod.MOD_ID);
 
-    public static final DeferredBlock<Block> LUMINOUS_BLOCK = registerBlock("luminous_block",
+    public static final DeferredBlock<Block> LAZURITE_BLOCK = registerBlock("lazurite_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
-    public static final DeferredBlock<Block> LUMINOUS_ORE = registerBlock("luminous_ore",
+    public static final DeferredBlock<Block> LAZURITE_ORE = registerBlock("lazurite_ore",
             () -> new DropExperienceBlock(UniformInt.of(2, 4),
                     BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 

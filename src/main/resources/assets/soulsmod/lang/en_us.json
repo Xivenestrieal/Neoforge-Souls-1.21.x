@@ -1,11 +1,11 @@
 {
-  "item.soulsmod.raw_luminous": "Raw Luminous",
-  "item.soulsmod.luminous_ingot": "Luminous Ingot",
-  "item.soulsmod.luminous_key": "Luminous Key",
+  "item.soulsmod.raw_lazurite": "Raw Lazurite",
+  "item.soulsmod.lazurite_ingot": "Lazurite Ingot",
+  "item.soulsmod.lazurite_key": "Lazurite Key",
   "item.soulsmod.hogyoku_soul": "Hogyoku Soul",
 
-  "block.soulsmod.luminous_block": "Block of Luminous",
-  "block.soulsmod.luminous_ore": "Luminous Ore",
+  "block.soulsmod.lazurite_block": "Block of Lazurite",
+  "block.soulsmod.lazurite_ore": "Lazurite Ore",
 
   "creativetab.soulsmod.soul_fragments": "Soul Fragments",
   "creativetab.soulsmod.gate_keys": "Gate Keys"

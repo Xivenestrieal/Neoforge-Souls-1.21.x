@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "soulsmod:item/raw_luminous"
+    "layer0": "soulsmod:item/lazurite_ingot"
   }
 }

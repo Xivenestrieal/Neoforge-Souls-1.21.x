@@ -60,9 +60,9 @@ public class SoulsMod {
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.RAW_LUMINOUS);
-            event.accept(ModItems.LUMINOUS_INGOT);
-            event.accept(ModItems.LUMINOUS_KEY);
+            event.accept(ModItems.RAW_LAZURITE);
+            event.accept(ModItems.LAZURITE_INGOT);
+            event.accept(ModItems.LAZURITE_KEY);
 
 
 
@@ -73,8 +73,8 @@ public class SoulsMod {
         }
 
         if(event.getTabKey() ==CreativeModeTabs.BUILDING_BLOCKS){
-            event.accept(ModBlocks.LUMINOUS_BLOCK);
-            event.accept(ModBlocks.LUMINOUS_ORE);
+            event.accept(ModBlocks.LAZURITE_BLOCK);
+            event.accept(ModBlocks.LAZURITE_ORE);
         }
 
 

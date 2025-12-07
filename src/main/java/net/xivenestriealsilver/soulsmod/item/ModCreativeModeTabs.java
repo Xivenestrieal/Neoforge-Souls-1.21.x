@@ -17,10 +17,10 @@ public class ModCreativeModeTabs {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, SoulsMod.MOD_ID);
 
     public static final Supplier<CreativeModeTab> GATE_KEYS_TAB = CREATIVE_MODE_TAB.register("gate_keys_tab",
-            ()-> CreativeModeTab.builder().icon(()-> new ItemStack(ModItems.LUMINOUS_KEY.get()))
+            ()-> CreativeModeTab.builder().icon(()-> new ItemStack(ModItems.LAZURITE_KEY.get()))
                     .title(Component.translatable("creativetab.soulsmod.gate_keys"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(ModItems.LUMINOUS_KEY);
+                        output.accept(ModItems.LAZURITE_KEY);
                     }).build());
 
 
