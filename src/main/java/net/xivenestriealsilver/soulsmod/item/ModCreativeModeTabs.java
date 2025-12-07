@@ -9,6 +9,7 @@ import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.xivenestriealsilver.soulsmod.SoulsMod;
+import net.xivenestriealsilver.soulsmod.block.ModBlocks;
 
 import java.util.function.Supplier;
 
@@ -16,22 +17,27 @@ public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TAB =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, SoulsMod.MOD_ID);
 
-    public static final Supplier<CreativeModeTab> GATE_KEYS_TAB = CREATIVE_MODE_TAB.register("gate_keys_tab",
-            ()-> CreativeModeTab.builder().icon(()-> new ItemStack(ModItems.LAZURITE_KEY.get()))
-                    .title(Component.translatable("creativetab.soulsmod.gate_keys"))
+    public static final Supplier<CreativeModeTab> LAZURITE_ITEMS_TAB = CREATIVE_MODE_TAB.register("lazurite_items_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.LAZURITE_INGOT.get()))
+                    .title(Component.translatable("creativetab.soulsmod.lazurite_items"))
                     .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModItems.LAZURITE_INGOT);
                         output.accept(ModItems.LAZURITE_KEY);
-                    }).build());
-
-
-    public static final Supplier<CreativeModeTab> SOUL_FRAGMENTS_TAB = CREATIVE_MODE_TAB.register("soul_fragments_tab",
-            ()-> CreativeModeTab.builder().icon(()-> new ItemStack(ModItems.HOGYOKU_SOUL.get()))
-                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(SoulsMod.MOD_ID, "gate_keys_tab"))
-                    .title(Component.translatable("creativetab.soulsmod.soul_fragments"))
-                    .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModItems.RAW_LAZURITE);
                         output.accept(ModItems.HOGYOKU_SOUL);
+                        output.accept(ModItems.SEARCHING_EYES);
+                        output.accept(ModItems.CORRUPTED_SOUL);
                     }).build());
 
+    public static final Supplier<CreativeModeTab> LAZURITE_BLOCK_TAB = CREATIVE_MODE_TAB.register("lazurite_blocks_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.LAZURITE_BLOCK))
+                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(SoulsMod.MOD_ID, "lazurite_items_tab"))
+                    .title(Component.translatable("creativetab.soulsmod.lazurite_blocks"))
+                    .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModBlocks.LAZURITE_BLOCK);
+                        output.accept(ModBlocks.LAZURITE_ORE);
+
+                    }).build());
 
     public static void register(IEventBus eventBus){
         CREATIVE_MODE_TAB.register(eventBus);

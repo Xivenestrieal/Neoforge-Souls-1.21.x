@@ -59,28 +59,6 @@ public class SoulsMod {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.RAW_LAZURITE);
-            event.accept(ModItems.LAZURITE_INGOT);
-            event.accept(ModItems.LAZURITE_KEY);
-
-
-
-        }
-
-        if(event.getTabKey() ==CreativeModeTabs.TOOLS_AND_UTILITIES){
-            event.accept(ModItems.SEARCHING_EYES);
-        }
-
-        if(event.getTabKey() ==CreativeModeTabs.BUILDING_BLOCKS){
-            event.accept(ModBlocks.LAZURITE_BLOCK);
-            event.accept(ModBlocks.LAZURITE_ORE);
-        }
-
-
-        if(event.getTabKey() ==CreativeModeTabs.COMBAT){
-            event.accept(ModItems.HOGYOKU_SOUL);
-        }
 
     }
 

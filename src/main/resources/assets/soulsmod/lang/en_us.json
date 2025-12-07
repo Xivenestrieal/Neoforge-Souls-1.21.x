@@ -3,10 +3,12 @@
   "item.soulsmod.lazurite_ingot": "Lazurite Ingot",
   "item.soulsmod.lazurite_key": "Lazurite Key",
   "item.soulsmod.hogyoku_soul": "Hogyoku Soul",
+  "item.soulsmod.corrupted_soul": "Corrupted Soul",
+
 
   "block.soulsmod.lazurite_block": "Block of Lazurite",
   "block.soulsmod.lazurite_ore": "Lazurite Ore",
 
-  "creativetab.soulsmod.soul_fragments": "Soul Fragments",
-  "creativetab.soulsmod.gate_keys": "Gate Keys"
+  "creativetab.soulsmod.lazurite_items": "Items",
+  "creativetab.soulsmod.lazurite_blocks": "Blocks"
 }

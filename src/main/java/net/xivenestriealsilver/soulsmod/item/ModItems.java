@@ -16,6 +16,10 @@ public class ModItems {
     public static final DeferredItem<Item> LAZURITE_INGOT = ITEMS.register("lazurite_ingot",
             () -> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item> CORRUPTED_SOUL = ITEMS.register("corrupted_soul",
+            () -> new Item(new Item.Properties()));
+
+
     public static final DeferredItem<Item> LAZURITE_KEY = ITEMS.register("lazurite_key",
             () -> new Item(new Item.Properties()));
 
