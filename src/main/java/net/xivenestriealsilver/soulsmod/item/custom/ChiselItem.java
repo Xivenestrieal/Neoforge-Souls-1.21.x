@@ -12,7 +12,7 @@ public class ChiselItem extends Item{
 
     @Override
     public InteractionResult useOn(UseOnContext context) {
-        Level level = context.getLevel()
+        Level level = context.getLevel();
 
         return super.useOn(context);
     }
