@@ -1,5 +1,7 @@
 {
   "variants": {
-    "": { "model": "soulsmod:block/lazurite_ore" }
+    "": {
+      "model": "soulsmod:block/lazurite_ore"
+    }
   }
 }
