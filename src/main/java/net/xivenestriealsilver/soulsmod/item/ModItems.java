@@ -5,6 +5,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.xivenestriealsilver.soulsmod.SoulsMod;
+import net.xivenestriealsilver.soulsmod.item.custom.FuelItem;
 
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(SoulsMod.MOD_ID);
@@ -31,6 +32,13 @@ public class ModItems {
 
     public static final DeferredItem<Item> ROOT_HEART = ITEMS.register("root_heart",
             () -> new Item(new Item.Properties().food(ModFoodProperties.ROOT_HEART)));
+
+    public static final DeferredItem<Item> ENT_CHARCOAL = ITEMS.register("ent_charcoal",
+            () -> new FuelItem(new Item.Properties(), 2000));
+
+    public static final DeferredItem<Item> FROZEN_FLAME = ITEMS.register("frozen_flame",
+            () -> new Item(new Item.Properties()));
+
 
 
 
