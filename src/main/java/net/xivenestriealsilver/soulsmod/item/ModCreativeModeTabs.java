@@ -27,6 +27,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.HOGYOKU_SOUL);
                         output.accept(ModItems.SEARCHING_EYES);
                         output.accept(ModItems.CORRUPTED_SOUL);
+                        output.accept(ModItems.ROOT_HEART);
                     }).build());
 
     public static final Supplier<CreativeModeTab> LAZURITE_BLOCK_TAB = CREATIVE_MODE_TAB.register("lazurite_blocks_tab",

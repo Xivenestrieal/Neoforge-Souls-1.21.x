@@ -29,6 +29,9 @@ public class ModItems {
     public static final DeferredItem<Item> HOGYOKU_SOUL = ITEMS.register("hogyoku_soul",
             () -> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item> ROOT_HEART = ITEMS.register("root_heart",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.ROOT_HEART)));
+
 
 
 
