@@ -11,6 +11,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.xivenestriealsilver.soulsmod.SoulsMod;
+import net.xivenestriealsilver.soulsmod.block.custom.SeekingBlock;
 import net.xivenestriealsilver.soulsmod.item.ModItems;
 
 import java.util.function.Supplier;
@@ -32,6 +33,9 @@ public class ModBlocks {
 public static final DeferredBlock<Block> DEEPSLATE_LAZURITE_ORE = registerBlock("deepslate_lazurite_ore",
             () -> new DropExperienceBlock(UniformInt.of(4, 8),
                     BlockBehaviour.Properties.of().strength(5f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> SEEKING_BLOCK = registerBlock("seeking_block",
+            () -> new SeekingBlock(BlockBehaviour.Properties.of().strength(5f).requiresCorrectToolForDrops().sound(SoundType.SCULK_SHRIEKER)));
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {

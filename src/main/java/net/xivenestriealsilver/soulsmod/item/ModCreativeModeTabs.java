@@ -41,6 +41,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.LAZURITE_BLOCK);
                         output.accept(ModBlocks.LAZURITE_ORE);
                         output.accept(ModBlocks.DEEPSLATE_LAZURITE_ORE);
+                        output.accept(ModBlocks.SEEKING_BLOCK);
 
                     }).build());
 
