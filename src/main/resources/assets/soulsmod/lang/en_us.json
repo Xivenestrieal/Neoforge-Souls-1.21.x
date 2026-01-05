@@ -4,7 +4,7 @@
   "item.soulsmod.lazurite_key": "Lazurite Key",
   "item.soulsmod.hogyoku_soul": "Hogyoku Soul",
   "item.soulsmod.corrupted_soul": "Corrupted Soul",
-  "item.soulsmod.searching_eyes": "Searching Eyes",
+  "item.soulsmod.seeking_eyes": "Seeking Eyes",
 
   "item.soulsmod.root_heart": "Root Heart",
 
@@ -20,5 +20,11 @@
   "block.soulsmod.deepslate_lazurite_ore": "Deepslate Lazurite Ore",
 
   "creativetab.soulsmod.lazurite_items": "Items",
-  "creativetab.soulsmod.lazurite_blocks": "Blocks"
+  "creativetab.soulsmod.lazurite_blocks": "Blocks",
+
+  "tooltip.soulsmod.seeking_block.tooltip": "What does it seek? I wonder... if only i could §9see§r into it's mind",
+  "tooltip.soulsmod.chisel.shift_down": "This item can chisel Blocks into Bricks",
+  "tooltip.soulsmod.chisel": "Press §eShift§r for more Information",
+
+  "item.soulsmod.seeking_eyes.tooltip": "The ever searching eyes, constantly looking for a §9place§r to belong"
 }

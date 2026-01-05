@@ -1,12 +1,17 @@
 package net.xivenestriealsilver.soulsmod.item;
 
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.xivenestriealsilver.soulsmod.SoulsMod;
 import net.xivenestriealsilver.soulsmod.item.custom.ChiselItem;
 import net.xivenestriealsilver.soulsmod.item.custom.FuelItem;
+
+import java.util.List;
 
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(SoulsMod.MOD_ID);
@@ -25,8 +30,15 @@ public class ModItems {
     public static final DeferredItem<Item> LAZURITE_KEY = ITEMS.register("lazurite_key",
             () -> new Item(new Item.Properties()));
 
-    public static final DeferredItem<Item> SEARCHING_EYES = ITEMS.register("searching_eyes",
-            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> SEEKING_EYES = ITEMS.register("seeking_eyes",
+            () -> new Item(new Item.Properties())  {
+                @Override
+                public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+                  tooltipComponents.add(Component.translatable("item.soulsmod.seeking_eyes.tooltip"));
+
+                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+                }
+            });
 
     public static final DeferredItem<Item> HOGYOKU_SOUL = ITEMS.register("hogyoku_soul",
             () -> new Item(new Item.Properties()));
