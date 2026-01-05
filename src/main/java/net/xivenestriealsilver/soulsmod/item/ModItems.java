@@ -5,6 +5,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.xivenestriealsilver.soulsmod.SoulsMod;
+import net.xivenestriealsilver.soulsmod.item.custom.ChiselItem;
 import net.xivenestriealsilver.soulsmod.item.custom.FuelItem;
 
 public class ModItems {
@@ -38,6 +39,9 @@ public class ModItems {
 
     public static final DeferredItem<Item> FROZEN_FLAME = ITEMS.register("frozen_flame",
             () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> CHISEL = ITEMS.register("chisel",
+            () -> new ChiselItem(new Item.Properties().durability(50)));
 
 
 

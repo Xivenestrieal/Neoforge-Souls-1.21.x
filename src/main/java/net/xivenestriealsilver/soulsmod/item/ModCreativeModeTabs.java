@@ -30,6 +30,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.ROOT_HEART);
                         output.accept(ModItems.ENT_CHARCOAL);
                         output.accept(ModItems.FROZEN_FLAME);
+                        output.accept(ModItems.CHISEL);
                     }).build());
 
     public static final Supplier<CreativeModeTab> LAZURITE_BLOCK_TAB = CREATIVE_MODE_TAB.register("lazurite_blocks_tab",
