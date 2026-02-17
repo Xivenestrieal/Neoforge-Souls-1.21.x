@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "soulsmod:block/deepslate_lazurite_ore"
-  }
-}
