@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "soulsmod:seeking_block"
+    }
+  ],
+  "result": {
+    "count": 18,
+    "id": "soulsmod:lazurite_ingot"
+  }
+}

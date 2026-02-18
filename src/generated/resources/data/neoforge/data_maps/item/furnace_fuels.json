@@ -1,0 +1,10 @@
+{
+  "values": {
+    "soulsmod:ent_charcoal": {
+      "burn_time": 1400
+    },
+    "soulsmod:frozen_flame": {
+      "burn_time": 3000
+    }
+  }
+}

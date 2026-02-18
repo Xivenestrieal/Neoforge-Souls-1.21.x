@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 150,
+  "experience": 0.25,
+  "group": "lazurite_ingot",
+  "ingredient": {
+    "item": "soulsmod:lazurite_ore"
+  },
+  "result": {
+    "count": 1,
+    "id": "soulsmod:lazurite_ingot"
+  }
+}
