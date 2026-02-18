@@ -32,7 +32,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         add(ModBlocks.LAZURITE_ORE.get(),
                 block -> createOreDrop(ModBlocks.LAZURITE_ORE.get(), ModItems.RAW_LAZURITE.get()));
         add(ModBlocks.DEEPSLATE_LAZURITE_ORE.get(),
-                block -> createMultipleOreDrops(ModBlocks.DEEPSLATE_LAZURITE_ORE.get(), ModItems.RAW_LAZURITE.get(), 2, 5));
+                block -> createMultipleOreDrops(ModBlocks.DEEPSLATE_LAZURITE_ORE.get(), ModItems.RAW_LAZURITE.get(), 2, 4));
 
     }
 
