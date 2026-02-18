@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "clicked=false": {
+      "model": "soulsmod:block/lazurite_lamp_off"
+    },
+    "clicked=true": {
+      "model": "soulsmod:block/lazurite_lamp_on"
+    }
+  }
+}
