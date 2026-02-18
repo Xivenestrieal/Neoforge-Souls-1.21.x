@@ -16,6 +16,7 @@
 
   "block.soulsmod.lazurite_block": "Block of Lazurite",
   "block.soulsmod.seeking_block": "Block of Seeking",
+  "block.soulsmod.lazurite_lamp": "Lazurite Lamp",
   "block.soulsmod.lazurite_ore": "Lazurite Ore",
   "block.soulsmod.deepslate_lazurite_ore": "Deepslate Lazurite Ore",
 
@@ -26,5 +27,5 @@
   "tooltip.soulsmod.chisel.shift_down": "This item can chisel Blocks into Bricks",
   "tooltip.soulsmod.chisel": "Press §eShift§r for more Information",
 
-  "item.soulsmod.seeking_eyes.tooltip": "The ever searching eyes, constantly looking for a §9place§r to belong"
+  "item.soulsmod.seeking_eyes.tooltip": "The ever seeking eyes, constantly looking for a §9place§r to belong"
 }

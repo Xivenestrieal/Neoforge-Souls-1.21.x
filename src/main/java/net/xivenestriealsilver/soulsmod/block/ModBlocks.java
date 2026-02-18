@@ -11,6 +11,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.xivenestriealsilver.soulsmod.SoulsMod;
+import net.xivenestriealsilver.soulsmod.block.custom.LazuriteLampBlock;
 import net.xivenestriealsilver.soulsmod.block.custom.SeekingBlock;
 import net.xivenestriealsilver.soulsmod.item.ModItems;
 
@@ -36,6 +37,12 @@ public static final DeferredBlock<Block> DEEPSLATE_LAZURITE_ORE = registerBlock(
 
     public static final DeferredBlock<Block> SEEKING_BLOCK = registerBlock("seeking_block",
             () -> new SeekingBlock(BlockBehaviour.Properties.of().strength(5f).requiresCorrectToolForDrops().sound(SoundType.SCULK_SHRIEKER)));
+
+
+    public static final DeferredBlock<Block> LAZURITE_LAMP = registerBlock("lazurite_lamp",
+            () -> new LazuriteLampBlock(BlockBehaviour.Properties.of().strength(2f)
+                    .requiresCorrectToolForDrops().lightLevel(state -> state.getValue(LazuriteLampBlock.CLICKED) ? 15 : 0)));
+
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {

@@ -29,6 +29,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.LAZURITE_BLOCK.get());
         dropSelf(ModBlocks.SEEKING_BLOCK.get());
 
+        dropSelf(ModBlocks.LAZURITE_LAMP.get());
+
         add(ModBlocks.LAZURITE_ORE.get(),
                 block -> createOreDrop(ModBlocks.LAZURITE_ORE.get(), ModItems.RAW_LAZURITE.get()));
         add(ModBlocks.DEEPSLATE_LAZURITE_ORE.get(),
